@@ -1,0 +1,10 @@
+.collection-preview {
+    display: flex;
+    flex-direction: column;
+  
+    .preview {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  

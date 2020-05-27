@@ -1,0 +1,23 @@
+.auth {
+    width: 95rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem auto;
+
+    .sign-in {
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sign-up {
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .btn-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}

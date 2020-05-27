@@ -1,0 +1,44 @@
+// COLOR VARIABLES
+$color-grey-dark-1: #4a4a4a;
+$color-grey-dark-2: #999;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-google: #4285f4;
+$color-google-2: #357ae8;
+
+// FONT VARIABLES
+$font-primary: 'Muli', sans-serif;
+
+// STYLE VARIABLES
+$border-thin-original: 1px solid transparent;
+$border-thin-dark: 1px solid $color-black;
+$border-thin-dark-2: 1px solid $color-grey-dark-2;
+
+// MINXINS
+
+@mixin shrinkLabel {
+    top: -1.4rem;
+    font-size: 1.2rem;
+    color: $color-black;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+    font-family: $font-primary;
+    padding: 2rem 6rem;
+}

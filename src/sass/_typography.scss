@@ -1,0 +1,77 @@
+%heading {
+    font-family: $font-primary;
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 2.5rem;
+    font-weight: 700;
+    // text-transform: uppercase;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 2.2rem;
+    color: $color-grey-dark-1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 2.4rem;
+    font-weight: inherit;
+    text-transform: uppercase;
+}
+
+.text {
+    @extend %heading;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.btn {
+    min-width: 14rem;
+    width: auto;
+    height: 5rem;
+    letter-spacing: 0.5px;
+    line-height: 5rem;
+    padding: 0 3.5rem 0 3.5rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+    background-color: $color-black;
+    color: $color-white;
+    text-transform: uppercase;
+    border: $border-thin-original;
+    cursor: pointer;
+    transition: all .3s ease;
+    backface-visibility: hidden;
+    outline: none;
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-black;
+        border: $border-thin-dark;
+    }
+
+    &.google-sign-in {
+        background-color: $color-google;
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-google-2;
+            border: $border-thin-original;
+        }
+    }
+}
+
+//MARGIN TOP
+.mt-md { margin-top: 2.5rem; }
+
+//MARGIN BOTTOM
+.mb-sm { margin-bottom: .6rem; }
+.mb-sm-2 { margin-bottom: 1.5rem}
+.mb-md { margin-bottom: 2.5rem; }
+.mb-lg { margin-bottom: 4rem; }
+.mb-hg { margin-bottom: 8rem; }
