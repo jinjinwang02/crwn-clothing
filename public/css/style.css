@@ -30,6 +30,44 @@ body {
   font-family: "Muli", sans-serif;
   padding: 2rem 6rem; }
 
+.cart-dropdown {
+  position: absolute;
+  width: 24rem;
+  height: 34rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid #000;
+  background-color: #fff;
+  top: 9rem;
+  right: 4rem;
+  z-index: 5; }
+  .cart-dropdown .cart-items {
+    height: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll; }
+  .cart-dropdown button {
+    margin-top: auto; }
+
+.cart-icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+  .cart-icon .shopping-icon {
+    width: 2.4rem;
+    height: 2.4rem; }
+  .cart-icon .item-count {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    bottom: 1.3rem;
+    right: 1.9rem; }
+
 .collection-item {
   width: 22%;
   display: flex;
