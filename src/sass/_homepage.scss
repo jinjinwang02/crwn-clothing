@@ -3,4 +3,70 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem 8rem;
+
+    .directory-menu {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .menu-item {
+            min-width: 30%;
+            height: 24rem;
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 .75rem 1.5rem;
+            border: $border-thin-dark;
+            overflow: hidden;
+        
+            &.large {
+                height: 38rem;
+            }
+        
+            &:first-child {
+                margin-right: .75rem;
+            }
+            
+            &:last-child {
+                margin-left: .75rem;
+            }
+        
+            .bg-img {
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+            }
+        
+            .content {
+                height: 9rem;
+                padding: 0 2.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: $border-thin-original;
+                background-color: $color-white;
+                opacity: 0.75;
+                position: absolute;
+                transition: opacity 1s ease;
+            }
+        
+            &:hover {
+                cursor: pointer;
+        
+                & .bg-img {
+                    transform: scale(1.1);
+                }
+        
+                & .content {
+                    opacity: 0.9;
+                }
+            }
+        }
+        
+    }
 }

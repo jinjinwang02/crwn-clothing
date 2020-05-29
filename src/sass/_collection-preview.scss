@@ -5,6 +5,58 @@
     .preview {
       display: flex;
       justify-content: space-between;
+
+      .collection-item {
+        width: 22%;
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+        align-items: center;
+        position: relative;
+      
+        .image {
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-position: center;    
+          transition: opacity .3s ease;
+        }
+    
+        .custom-button {
+          width: 80%;
+          position: absolute;
+          top: 28rem;
+          display: none;
+        }
+      
+        .collection-footer {
+          width: 100%;
+          height: 5%;
+          display: flex;
+          justify-content: space-between;
+          font-size: 1.8rem;
+      
+          .name {
+            width: 90%;
+          }
+      
+          .price {
+            width: 10%;
+          }
+        }
+    
+        &:hover {
+          .image {
+            opacity: 0.9;
+          }
+    
+          .custom-button {
+            display: flex;
+          }
+        }
+      }
+      
     }
+
   }
   

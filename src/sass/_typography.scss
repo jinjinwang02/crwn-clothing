@@ -48,6 +48,8 @@
     transition: all .3s ease;
     backface-visibility: hidden;
     outline: none;
+    display: flex;
+    justify-content: center;
 
     &:hover {
         background-color: $color-white;
@@ -64,9 +66,24 @@
             border: $border-thin-original;
         }
     }
+
+    &.inverted {
+        background-color: $color-white;
+        color: $color-black;
+        border: $border-thin-original;
+        opacity: 0.8;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: $color-black;
+            color: $color-white;
+            opacity: 1;
+        }
+    }
 }
 
 //MARGIN TOP
+.mt-sm { margin-top: .6rem;}
 .mt-md { margin-top: 2.5rem; }
 
 //MARGIN BOTTOM
