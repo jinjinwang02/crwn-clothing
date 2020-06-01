@@ -1,5 +1,7 @@
 A E-commerce site built using React, Redux, Firebase, Stripe and Sass, following the React course on Udemy (https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
 
+You can check it out at https://crwn-clothing-20200106.herokuapp.com/
+
 ## Install
 
 ```bash
