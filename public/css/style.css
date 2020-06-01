@@ -68,11 +68,11 @@ body {
 
 .checkout {
   width: 55%;
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem auto; }
+  margin: 1rem auto; }
   .checkout .checkout-header {
     width: 100%;
     padding: 1rem 0;
@@ -91,12 +91,18 @@ body {
     margin-left: auto;
     font-size: 2.6rem;
     font-weight: 200; }
+  .checkout .checkout-button {
+    margin-left: auto; }
+  .checkout .test-warning {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #e94a2d; }
   .checkout .checkout-item {
     width: 100%;
     display: flex;
     min-height: 10rem;
     border-bottom: 1px solid #999;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 1.2rem;
     font-size: 1.5rem;
     align-items: center; }
     .checkout .checkout-item .image-container {
@@ -380,6 +386,9 @@ body {
 
 .mt-md-2 {
   margin-top: 3rem; }
+
+.mt-lg {
+  margin-top: 4rem; }
 
 .mb-sm {
   margin-bottom: .6rem; }
