@@ -83,12 +83,16 @@
 }
 
 //MARGIN TOP
-.mt-sm { margin-top: .6rem;}
+.mt-sm { margin-top: .6rem; }
 .mt-md { margin-top: 2.5rem; }
+.mt-md-2 { margin-top: 3rem }
 
 //MARGIN BOTTOM
 .mb-sm { margin-bottom: .6rem; }
-.mb-sm-2 { margin-bottom: 1.5rem}
+.mb-sm-2 { margin-bottom: 1.5rem; }
 .mb-md { margin-bottom: 2.5rem; }
 .mb-lg { margin-bottom: 4rem; }
 .mb-hg { margin-bottom: 8rem; }
+
+//MARGIN AUTO
+.mg-auto { margin: auto; }
