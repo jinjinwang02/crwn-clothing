@@ -11,6 +11,18 @@
       display: flex;
       justify-content: space-between;
     }
+
+    .collection-button {
+      margin-left: auto;
+      font-size: 1.8rem;
+      border-bottom: $border-thin-original;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        border-bottom: $border-thin-dark;
+      }
+    }
   }
 }
 

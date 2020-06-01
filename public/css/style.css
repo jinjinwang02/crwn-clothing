@@ -138,6 +138,14 @@ body {
     .collections-overview .collection-preview .preview {
       display: flex;
       justify-content: space-between; }
+    .collections-overview .collection-preview .collection-button {
+      margin-left: auto;
+      font-size: 1.8rem;
+      border-bottom: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s; }
+      .collections-overview .collection-preview .collection-button:hover {
+        border-bottom: 1px solid #000; }
 
 .collection-page {
   display: flex;
