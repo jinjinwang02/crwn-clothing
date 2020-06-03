@@ -5,7 +5,7 @@
     padding: 2rem 8rem;
 
     .directory-menu {
-        width: 100%;
+        width: 110%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -22,16 +22,17 @@
             overflow: hidden;
         
             &.large {
+                min-width: 35%;
                 height: 38rem;
             }
         
-            &:first-child {
-                margin-right: .75rem;
-            }
+            // &:first-child {
+            //     margin-right: .75rem;
+            // }
             
-            &:last-child {
-                margin-left: .75rem;
-            }
+            // &:last-child {
+            //     margin-left: .75rem;
+            // }
         
             .bg-img {
                 width: 100%;

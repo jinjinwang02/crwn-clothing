@@ -10,6 +10,9 @@ import Auth from './pages/auth.component';
 import { setCurrentUser } from './redux/user/user.actions';
 import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from './redux/user/user.selectors';
+// import { selectCollectionForPreview } from './redux/shop/shop.selectors';
+// import { addCollectionAndDocuments } from './firebase/firebase.utils';
+
 
 class App extends React.Component {
 
@@ -17,6 +20,7 @@ class App extends React.Component {
 
   componentDidMount() {
     const { setCurrentUser } = this.props;
+    // const { collectionsArray } = this.props;
     //Listens on user status whenever the app comp is mounted on the DOM
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
@@ -29,6 +33,7 @@ class App extends React.Component {
         });
       } else if (!userAuth) {
         setCurrentUser(userAuth);
+        // addCollectionAndDocuments('collections', collectionsArray.map(({ title, items }) => ({ title, items })));
       }
     });
   }
@@ -55,11 +60,12 @@ class App extends React.Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
+  currentUser: selectCurrentUser,
+  // collectionsArray: selectCollectionForPreview
 });
 
 const mapDispatchToProps = dispatch => ({
-  setCurrentUser: user => dispatch(setCurrentUser(user))
+  setCurrentUser: user => dispatch(setCurrentUser(user)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
