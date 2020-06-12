@@ -278,7 +278,7 @@ body {
   align-items: center;
   padding: 2rem 8rem; }
   .homepage .directory-menu {
-    width: 110%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
@@ -293,7 +293,7 @@ body {
       border: 1px solid #000;
       overflow: hidden; }
       .homepage .directory-menu .menu-item.large {
-        min-width: 35%;
+        min-width: 40%;
         height: 38rem; }
       .homepage .directory-menu .menu-item .bg-img {
         width: 100%;

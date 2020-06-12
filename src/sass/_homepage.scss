@@ -5,7 +5,7 @@
     padding: 2rem 8rem;
 
     .directory-menu {
-        width: 110%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -22,7 +22,7 @@
             overflow: hidden;
         
             &.large {
-                min-width: 35%;
+                min-width: 40%;
                 height: 38rem;
             }
         
