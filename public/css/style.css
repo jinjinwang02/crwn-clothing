@@ -294,7 +294,7 @@ body {
       .homepage .directory-menu .menu-item:nth-child(3), .homepage .directory-menu .menu-item:nth-child(4), .homepage .directory-menu .menu-item:nth-child(5) {
         min-width: 30%; }
       .homepage .directory-menu .menu-item.large {
-        min-width: 40% !important;
+        min-width: 40%;
         height: 38rem; }
       .homepage .directory-menu .menu-item .bg-img {
         width: 100%;
