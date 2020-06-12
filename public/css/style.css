@@ -293,7 +293,7 @@ body {
       border: 1px solid #000;
       overflow: hidden; }
       .homepage .directory-menu .menu-item.large {
-        min-width: 40%;
+        min-width: 40% !important;
         height: 38rem; }
       .homepage .directory-menu .menu-item .bg-img {
         width: 100%;

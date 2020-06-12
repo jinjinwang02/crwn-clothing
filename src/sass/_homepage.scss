@@ -22,17 +22,9 @@
             overflow: hidden;
         
             &.large {
-                min-width: 40%;
+                min-width: 40%!important;
                 height: 38rem;
             }
-        
-            // &:first-child {
-            //     margin-right: .75rem;
-            // }
-            
-            // &:last-child {
-            //     margin-left: .75rem;
-            // }
         
             .bg-img {
                 width: 100%;
