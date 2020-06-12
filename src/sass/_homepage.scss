@@ -11,6 +11,7 @@
         justify-content: space-between;
 
         .menu-item {
+            min-width: 30%;
             height: 24rem;
             flex: 1 1 auto;
             display: flex;
@@ -19,12 +20,6 @@
             margin: 0 .75rem 1.5rem;
             border: $border-thin-dark;
             overflow: hidden;
-
-            &:nth-child(3),
-            &:nth-child(4),
-            &:nth-child(5) {
-                min-width: 30%;
-            }
         
             &.large {
                 min-width: 40%;
