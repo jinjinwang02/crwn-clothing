@@ -29,6 +29,7 @@
   },
   "scripts": {
     "watch:sass": "node-sass src/sass/main.scss public/css/style.css -w",
+    "compile:sass": "node-sass src/sass/main.scss public/css/style.comp.css",
     "concat:css": "concat -o public/css/style.concat.css public/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/style.concat.css -o public/css/style.prefix.css",
     "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
