@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { Profiler } from 'react';
 import Directory from '../components/directory.component'
 
 const HomePage = () => (
     <div className='homepage'>
-        <Directory />
+        <Profiler id="Directory" onRender={(id, phase, actualDuration) => {
+            console.log({ id, phase, actualDuration });
+        }}>
+            <Directory />
+        </Profiler>
     </div>
 );
 
