@@ -4,10 +4,20 @@
   display: flex;
   justify-content: space-between;
 
+  @media screen and (max-width: 80rem){
+    height: 6rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
   .logo-container {
     height: 100%;
     width: 7rem;
     position: relative;
+
+    @media screen and (max-width: 80rem){
+      width: 5rem;
+  }
 
     .logo {
       position: absolute;
@@ -23,6 +33,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media screen and (max-width: 80rem){
+      width: 80%;
+  }
 
     .nav {
       padding: 1rem 1.5rem;
