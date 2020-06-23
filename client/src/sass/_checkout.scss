@@ -6,6 +6,17 @@
   align-items: center;
   margin: 1rem auto;
 
+  @media screen and (max-width: 50em){
+    width: 90%;
+}
+
+  .heading-1 {
+    @media screen and (max-width: 50em){
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+  }
+  }
+
   .checkout-header {
     width: 100%;
     padding: 1rem 0;
@@ -26,6 +37,10 @@
         width: 8%;
       }
     }
+    @media screen and (max-width: 50em){
+      display: none;
+  }
+    
   }
 
   .total {

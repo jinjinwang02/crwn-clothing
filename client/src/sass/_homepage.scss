@@ -21,7 +21,7 @@
             border: $border-thin-dark;
             overflow: hidden;
 
-            @media screen and (max-width: 80rem){
+            @media screen and (max-width: 50em){
                 height: 20rem;
             }
         
@@ -29,7 +29,7 @@
                 min-width: 40%;
                 height: 38rem;
 
-                @media screen and (max-width: 80rem){
+                @media screen and (max-width: 50em){
                     height: 20rem;
                 }
             }

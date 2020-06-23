@@ -4,10 +4,10 @@
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 80rem){
+  @media screen and (max-width: 50em){
     height: 6rem;
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
   .logo-container {
@@ -15,7 +15,7 @@
     width: 7rem;
     position: relative;
 
-    @media screen and (max-width: 80rem){
+    @media screen and (max-width: 50em){
       width: 5rem;
   }
 
@@ -24,6 +24,10 @@
       top: 20%;
       left: 50%;
       transform: translate(-50%, -20%);
+
+      @media screen and (max-width: 50em){
+        transform: translate(-50%, -30%) scale(0.7);
+    }
     }
   }
 
@@ -34,7 +38,7 @@
     align-items: center;
     justify-content: flex-end;
 
-    @media screen and (max-width: 80rem){
+    @media screen and (max-width: 50em){
       width: 80%;
   }
 
@@ -42,6 +46,10 @@
       padding: 1rem 1.5rem;
       cursor: pointer;
       font-size: 1.3rem;
+
+      @media screen and (max-width: 50em){
+        padding: 1rem 0.6rem;
+    }
 
       &:link,
       &:visited {
@@ -56,8 +64,12 @@
       position: relative;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       cursor: pointer;
+      
+      @media screen and (max-width: 50em){
+        width: 3.5rem;
+    }
     
       .shopping-icon {
         width: 2.4rem;
@@ -69,7 +81,7 @@
         font-size: 1rem;
         font-weight: bold;
         bottom: 1.3rem;
-        right: 1.9rem;
+        right: 0.9rem;
       }
     }
   

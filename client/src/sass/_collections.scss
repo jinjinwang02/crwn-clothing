@@ -6,15 +6,12 @@
   .collection-preview {
     display: flex;
     flex-direction: column;
-
-    @media screen and (max-width: 80rem){
-      align-items: center;
-  }
+    
     .preview {
       display: flex;
       justify-content: space-between;
 
-      @media screen and (max-width: 80rem){
+      @media screen and (max-width: 50em){
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1.5rem;
@@ -50,6 +47,10 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
 
+    @media screen and (max-width: 50em){
+      grid-template-columns: 1fr 1fr;
+  }
+
     & .collection-item {
       margin-bottom: 30px;
     }
@@ -66,8 +67,8 @@
   position: relative;
 
 
-  @media screen and (max-width: 80rem){
-    width: 40vw;
+  @media screen and (max-width: 50em) {
+    width: 100%;
 }
 
   .image {
@@ -84,7 +85,7 @@
     top: 28rem;
     display: none;
 
-    @media screen and (max-width: 80rem){
+    @media screen and (max-width: 50em){
       display: block;
       opacity: .9;
       min-width: unset;
@@ -97,6 +98,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 1.8rem;
+  }
 
   &:hover {
     .image {
@@ -106,15 +108,16 @@
     .custom-button {
       display: flex;
     }
+}
 
-    @media screen and (max-width: 80rem){
-      .image {
-        opacity: unset;
-      }
+@media screen and (max-width: 50em){
+  &:hover {
+    .image {
+    opacity: unset;
+  }
 
-      .custom-button {
-        display: block;
-      }
+  .custom-button {
+    display: block;
   }
 }
 }

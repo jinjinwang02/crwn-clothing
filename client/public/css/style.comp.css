@@ -3,10 +3,19 @@
   display: flex;
   justify-content: space-between;
   margin: 5rem auto; }
+  @media screen and (max-width: 50em) {
+    .auth {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 3rem auto 5rem; } }
   .auth .sign-in {
     width: 40rem;
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 50em) {
+      .auth .sign-in {
+        margin-bottom: 8rem; } }
   .auth .sign-up {
     width: 40rem;
     display: flex;
@@ -25,10 +34,16 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media screen and (max-width: 50em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Muli", sans-serif;
   padding: 2rem 4rem; }
+  @media screen and (max-width: 50em) {
+    body {
+      padding: 1rem 2rem; } }
 
 .cart-dropdown {
   position: absolute;
@@ -73,6 +88,13 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 1rem auto; }
+  @media screen and (max-width: 50em) {
+    .checkout {
+      width: 90%; } }
+  @media screen and (max-width: 50em) {
+    .checkout .heading-1 {
+      margin-top: 2rem;
+      margin-bottom: 2rem; } }
   .checkout .checkout-header {
     width: 100%;
     padding: 1rem 0;
@@ -87,6 +109,9 @@ body {
         width: 20%; }
       .checkout .checkout-header .header-block:last-child {
         width: 8%; }
+    @media screen and (max-width: 50em) {
+      .checkout .checkout-header {
+        display: none; } }
   .checkout .total {
     margin-left: auto;
     font-size: 2.6rem;
@@ -138,6 +163,11 @@ body {
     .collections-overview .collection-preview .preview {
       display: flex;
       justify-content: space-between; }
+      @media screen and (max-width: 50em) {
+        .collections-overview .collection-preview .preview {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 1.5rem; } }
     .collections-overview .collection-preview .collection-button {
       margin-left: auto;
       font-size: 1.8rem;
@@ -157,6 +187,9 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem; }
+    @media screen and (max-width: 50em) {
+      .collection-page .items {
+        grid-template-columns: 1fr 1fr; } }
     .collection-page .items .collection-item {
       margin-bottom: 30px; }
 
@@ -167,6 +200,9 @@ body {
   height: 42rem;
   align-items: center;
   position: relative; }
+  @media screen and (max-width: 50em) {
+    .collection-item {
+      width: 100%; } }
   .collection-item .image {
     width: 100%;
     height: 100%;
@@ -178,20 +214,46 @@ body {
     position: absolute;
     top: 28rem;
     display: none; }
+    @media screen and (max-width: 50em) {
+      .collection-item .custom-button {
+        display: block;
+        opacity: .9;
+        min-width: unset; } }
   .collection-item .collection-footer {
     width: 100%;
     height: 5%;
     display: flex;
     justify-content: space-between;
     font-size: 1.8rem; }
-    .collection-item .collection-footer .name {
-      width: 90%; }
-    .collection-item .collection-footer .price {
-      width: 10%; }
   .collection-item:hover .image {
     opacity: 0.9; }
   .collection-item:hover .custom-button {
     display: flex; }
+  @media screen and (max-width: 50em) {
+    .collection-item:hover .image {
+      opacity: unset; }
+    .collection-item:hover .custom-button {
+      display: block; } }
+
+.error-image-overlay {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.error-image-container {
+  display: inline-block;
+  background-image: url(https://i.imgur.com/lKJiT77.png);
+  background-size: cover;
+  background-position: center;
+  width: 50vh;
+  height: 50vh; }
+
+.error-image-text {
+  font-size: 2rem;
+  color: #9b9b9b; }
 
 .group {
   position: relative;
@@ -232,25 +294,42 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 50em) {
+    .header {
+      height: 6rem;
+      padding: 1rem;
+      margin: 2rem 0; } }
   .header .logo-container {
     height: 100%;
     width: 7rem;
     position: relative; }
+    @media screen and (max-width: 50em) {
+      .header .logo-container {
+        width: 5rem; } }
     .header .logo-container .logo {
       position: absolute;
       top: 20%;
       left: 50%;
       transform: translate(-50%, -20%); }
+      @media screen and (max-width: 50em) {
+        .header .logo-container .logo {
+          transform: translate(-50%, -30%) scale(0.7); } }
   .header .navbar {
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end; }
+    @media screen and (max-width: 50em) {
+      .header .navbar {
+        width: 80%; } }
     .header .navbar .nav {
       padding: 1rem 1.5rem;
       cursor: pointer;
       font-size: 1.3rem; }
+      @media screen and (max-width: 50em) {
+        .header .navbar .nav {
+          padding: 1rem 0.6rem; } }
       .header .navbar .nav:link, .header .navbar .nav:visited {
         text-decoration: none;
         color: #000; }
@@ -260,8 +339,11 @@ body {
       position: relative;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       cursor: pointer; }
+      @media screen and (max-width: 50em) {
+        .header .navbar .cart-icon {
+          width: 3.5rem; } }
       .header .navbar .cart-icon .shopping-icon {
         width: 2.4rem;
         height: 2.4rem; }
@@ -270,7 +352,7 @@ body {
         font-size: 1rem;
         font-weight: bold;
         bottom: 1.3rem;
-        right: 1.9rem; }
+        right: 0.9rem; }
 
 .homepage {
   display: flex;
@@ -292,9 +374,15 @@ body {
       margin: 0 .75rem 1.5rem;
       border: 1px solid #000;
       overflow: hidden; }
+      @media screen and (max-width: 50em) {
+        .homepage .directory-menu .menu-item {
+          height: 20rem; } }
       .homepage .directory-menu .menu-item.large {
         min-width: 40%;
         height: 38rem; }
+        @media screen and (max-width: 50em) {
+          .homepage .directory-menu .menu-item.large {
+            height: 20rem; } }
       .homepage .directory-menu .menu-item .bg-img {
         width: 100%;
         height: 100%;
@@ -362,6 +450,9 @@ body {
   outline: none;
   display: flex;
   justify-content: center; }
+  @media screen and (max-width: 50em) {
+    .btn {
+      padding: 0 2.5rem 0 2.5rem; } }
   .btn:hover {
     background-color: #fff;
     color: #000;
