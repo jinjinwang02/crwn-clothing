@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
+app.use("/public", express.static(__dirname + "client/public"));
 
 if (process.env.NODE_ENV === "production") {
     app.use(compression());
