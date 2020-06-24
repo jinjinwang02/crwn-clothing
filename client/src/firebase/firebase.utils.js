@@ -13,10 +13,12 @@ const config = {
     measurementId: "G-PEJNXKYC3J"
 };
 
+firebase.initializeApp(config);
+
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
 
-    const userRef = firestore.doc(`user/${userAuth.uid}`);
+    const userRef = firestore.doc(`users/${userAuth.uid}`);
 
     const snapShot = await userRef.get();
 
@@ -36,6 +38,19 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         }
     }
     return userRef;
+};
+
+export const getUserCartRef = async userId => {
+    const cartsRef = firestore.collection('carts').where('userId', '==', userId);
+    const snapShot = await cartsRef.get();
+
+    if (snapShot.empty) {
+        const cartDocRef = firestore.collection('carts').doc();
+        await cartDocRef.set({ userId, cartItems: [] });
+        return cartDocRef;
+    } else {
+        return snapShot.docs[0].ref;
+    }
 };
 
 export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
@@ -67,8 +82,6 @@ export const convertCollectionsSnapshotToMap = collections => {
         return accumulator;
     }, {});
 }
-
-firebase.initializeApp(config);
 
 export const getCurrentUser = () => {
     return new Promise((resolve, reject) => {
