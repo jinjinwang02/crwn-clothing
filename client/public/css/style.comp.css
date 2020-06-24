@@ -308,7 +308,7 @@ body {
         width: 5rem; } }
     .header .logo-container .logo {
       position: absolute;
-      top: 20%;
+      top: 30%;
       left: 50%;
       transform: translate(-50%, -20%); }
       @media screen and (max-width: 50em) {
